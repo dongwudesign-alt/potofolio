@@ -1,4 +1,4 @@
-﻿﻿﻿﻿﻿﻿﻿﻿﻿<!doctype html>
+﻿﻿<!doctype html>
 <html lang="en"><head><script data-od-sandbox-shim>(function(){
   function makeStore(){
     var data = {};
@@ -1217,13 +1217,13 @@ section.tight { padding: 90px 0; }
 .method-grid::before {
   content: '';
   position: absolute;
-  top: 60px;
+  top: 76px;
   left: 50px;
   right: 50px;
   height: 1px;
   background: var(--line-soft);
 }
-.method-step { position: relative; }
+.method-step { position: relative; display: flex; flex-direction: column; }
 .method-step .num {
   font-family: var(--serif);
   font-style: italic;
@@ -1233,7 +1233,7 @@ section.tight { padding: 90px 0; }
   line-height: 0.85;
   margin-bottom: 24px;
   letter-spacing: -0.02em;
-  background: var(--paper);
+  background: transparent;
   display: inline-block;
   padding-right: 12px;
   position: relative;
@@ -1265,13 +1265,14 @@ section.tight { padding: 90px 0; }
   max-width: 24ch;
 }
 .method-step .img {
+  margin-top: auto;
   aspect-ratio: 1 / 1;
   background: var(--bone);
   border-radius: 12px;
   overflow: hidden;
   box-shadow: var(--shadow);
 }
-.method-step .img img { width: 100%; height: 100%; object-fit: cover; }
+.method-step .img img { width: 100%; height: 100%; object-fit: cover; object-position: bottom; }
 .method-foot {
   margin-top: 80px;
   display: flex;
@@ -2628,10 +2629,10 @@ footer {
     <div class="labs-head">
       <div data-reveal="">
         <span class="label">Labs <span class="ix">· Nº 04</span></span>
-        <h2 class="display" style="margin-top:30px;" data-od-id="path-2-6-0-1-0-1">A living archive of <em>experiments</em> in skills, decks, and machine-made form<span class="dot">.</span></h2>
+        <h2 class="display" style="margin-top:30px;" data-od-id="path-2-6-0-1-0-1">Integrated AI <em style="font-family:'Playfair Display', serif; font-style:italic; font-weight:500;">Workspace</em>: Notes, Meetings, Knowledge，AI Video Models&amp; <em style="font-family:'Playfair Display', serif; font-style:italic; font-weight:500;">Agents on PC</em></h2>
       </div>
       <div class="pills" data-reveal="right">
-          <button class="pill active" data-od-id="path-2-6-0-1-1-0">All<span class="count">31</span></button>
+          <button class="pill active" data-od-id="path-2-6-0-1-1-0"><span style="font-family:'Playfair Display', serif; font-style:italic; font-weight:500;">All</span><span class="count">31</span></button>
           <button class="pill" data-od-id="path-2-6-0-1-1-1">Prototype<span class="count">27</span></button>
           <button class="pill" data-od-id="path-2-6-0-1-1-2">Deck<span class="count">04</span></button>
           <button class="pill" data-od-id="path-2-6-0-1-1-3">Mobile<span class="count">03</span></button>
@@ -2712,7 +2713,7 @@ footer {
     <div class="method-head">
       <div data-reveal="">
         <span class="label">Method <span class="ix">· Nº 05</span></span>
-        <h2 class="display" style="margin-top:30px;" data-od-id="path-2-7-0-1-0-1">From <em>signals</em> to systems<span class="dot">.</span></h2>
+        <h2 class="display" style="margin-top:30px;" data-od-id="path-2-7-0-1-0-1">AI <em style="font-family:'Playfair Display', serif; font-style:italic; font-weight:500;">Workflows</em> and User <em style="font-family:'Playfair Display', serif; font-style:italic; font-weight:500;">Journeys</em><span class="dot">.</span></h2>
       </div>
       <div class="right" data-reveal="right">
         <span class="plus">+</span>
@@ -2722,27 +2723,27 @@ footer {
     <div class="method-grid">
         <div class="method-step" data-reveal="">
     <div class="num">01</div>
-    <h4 data-od-id="path-2-7-0-2-0-1">Detect <span class="arrow-r">→</span></h4>
-    <p>The daemon scans your $PATH for 12 coding agents and auto-loads 31 skills + 72 systems on boot.</p>
-    <div class="img"><img src="/api/plugins/example-open-design-landing/asset/assets/method-1.png" alt=""></div>
+    <h4 data-od-id="path-2-7-0-2-0-1">Meeting <span class="arrow-r">→</span></h4>
+    <p>Meeting minutes record the content of the exchange and generate a summary.</p>
+    <div class="img"><img src="picture/method/Meeting.png" alt=""></div>
   </div>
         <div class="method-step" data-reveal="">
     <div class="num">02</div>
-    <h4 data-od-id="path-2-7-0-2-1-1">Discover <span class="arrow-r">→</span></h4>
-    <p>Turn 1 is a question form — surface, audience, tone, scale, brand context. Locked in 30 seconds.</p>
-    <div class="img"><img src="/api/plugins/example-open-design-landing/asset/assets/method-2.png" alt=""></div>
+    <h4 data-od-id="path-2-7-0-2-1-1">Notes <span class="arrow-r">→</span></h4>
+    <p>Import the summary into your notes and perform CRUD operations (create, read, update, delete) on it.</p>
+    <div class="img"><img src="picture/method/notes.png" alt=""></div>
   </div>
         <div class="method-step" data-reveal="">
     <div class="num">03</div>
-    <h4 data-od-id="path-2-7-0-2-2-1">Direct <span class="arrow-r">→</span></h4>
-    <p>Pick one of 5 deterministic visual directions. Palette in OKLch, font stack, layout posture cues.</p>
-    <div class="img"><img src="/api/plugins/example-open-design-landing/asset/assets/method-3.png" alt=""></div>
+    <h4 data-od-id="path-2-7-0-2-2-1">Knowledge <span class="arrow-r">→</span></h4>
+    <p>By grouping multiple meetings and notes into a single folder, you can build your own knowledge base.</p>
+    <div class="img"><img src="picture/method/knowledge.png" alt=""></div>
   </div>
         <div class="method-step" data-reveal="">
     <div class="num">04</div>
-    <h4 data-od-id="path-2-7-0-2-3-1">Deliver</h4>
-    <p>The agent writes to disk, you preview in a sandboxed iframe, export HTML / PDF / PPTX / ZIP / Markdown.</p>
-    <div class="img"><img src="/api/plugins/example-open-design-landing/asset/assets/method-4.png" alt=""></div>
+    <h4 data-od-id="path-2-7-0-2-3-1">To Do</h4>
+    <p>Flowy can retrieve your daily tasks from your knowledge base, generate a to-do list, and proactively remind you of your work progress.</p>
+    <div class="img"><img src="picture/method/to%20do.png" alt=""></div>
   </div>
     </div>
     <div class="method-foot">
